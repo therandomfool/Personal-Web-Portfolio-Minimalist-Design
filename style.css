@@ -12,16 +12,18 @@
     position: fixed;
     display: grid;
     grid-template-columns: .60fr .20fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     gap: 35px;
+    top: 10%;
 }
 
 .me{
     position: relative;
+    display: block;
     grid-column: 4 / span 2;
     grid-row: 1;
     margin-top: 50px;
-    text-align: end;
+    text-align: center;
 }
 
 .me h1{
@@ -115,10 +117,11 @@
 
 /* About Panel */
 .tabContainer {
+    display: none;
     grid-column: 3;
     grid-row: 2 / span 3;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 600px;

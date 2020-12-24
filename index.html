@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <script src="sketch.js"></script>
-    <!-- <script src="jquery.js"></script> -->
+   
   </head>
   <body>
     <div class="container">
@@ -32,12 +32,12 @@
 
         <div class="box-area">
           <ul class="box">
-            <li data-toggle="tooltip" data-placement="right" title="HOME" tabindex="0"><i class="fa fa-home fa-fw"></i></li>
-            <li data-toggle="tooltip" data-placement="right" title="ABOUT ME"tabindex="0"><i class="fas fa-robot fa-fw"></i></li>
+            <li data-toggle="tooltip" data-placement="right" title="HOME" onclick="home()" tabindex="0"><i class="fa fa-home fa-fw"></i></li>
+            <li data-toggle="tooltip" data-placement="right" title="ABOUT ME"onclick="about()" tabindex="0"><i class="fas fa-robot fa-fw"></i></li>
             <li data-toggle="tooltip" data-placement="right" title="PORTFOLIO" onclick="home()" tabindex="0">
               <i class="fas fa-laptop-code fa-fw"></i>
             </li>
-            <li data-toggle="tooltip" data-placement="right" title="CONTACT ME" tabindex="0"><i class="fa fa-send-o fa-fw"></i></li>
+            <li data-toggle="tooltip" data-placement="right" title="CONTACT ME" onclick="about()" tabindex="0"> <i class="fa fa-send-o fa-fw"></i></li>
             <li data-toggle="tooltip" data-placement="right" title="LINKEDIN" tabindex="0"><i class="fab fa-linkedin fa-fw"></i></li>
             <li data-toggle="tooltip" data-placement="right" title="GITHUB" tabindex="0"><i class="fab fa-github-alt fa-fw"></i></li>
             <li data-toggle="tooltip" data-placement="right" title="RESUME PDF" tabindex="0"><i class="fas fa-file-pdf fa-fw"></i></li>
@@ -63,7 +63,7 @@
 
 <!-- main view area -->
 
-    <div id="nav-viewarea"></div>
+    <div class ='about' id="nav-viewarea"></div>
 
 
 
