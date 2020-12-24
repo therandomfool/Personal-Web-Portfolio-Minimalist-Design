@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat&display=swap');
 
 * {
     margin: 0;
@@ -20,16 +20,18 @@
     grid-column: 4 / span 2;
     grid-row: 1;
     margin-top: 50px;
-    text-align: center;
+    text-align: end;
 }
 
-#on {
-    display: block;
+.me h1{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.me h3{
+    font-size: 1.314rem;
 }
 
-#off {
-    display: none;
-}
+
 
 .box-area {
     grid-column: 1;
@@ -71,14 +73,15 @@
 
 
 .box li{
-    font-weight: bold;
+    
+    font-weight: bolder;
     cursor: pointer;
     transition: color 0.2s ease-out, transform 0.2s ease-out;
     background: #f8f8f8;
     color: #040234;
     display: inline-block;
-    margin: 10px;
-    padding:  12px;
+    margin: 6px;
+    padding:  8px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
         -4px -4px 6px #fff;
@@ -86,7 +89,7 @@
 }
 
 .box i {
-    font-size: 1.7rempx;
+    font-size: 1.5rem;
    
 }
 
@@ -107,4 +110,35 @@
 .box li:focus {
     color: rgb(65, 7, 224);
 }
+
+/* About Panel */
+.tabContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    padding: 50px 48px;
+
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        0px 0px 4px rgba(255, 255, 255, .2);
+    border-radius: 30px;
+}
+
+
+.tabPanel{
+    box-shadow:inset 7px 7px 15px rgba(55, 84, 170, .15),
+                inset -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, 0),
+                0px 0px 4px rgba(255, 255, 255, .2);
+                border-radius: 10px;
+                padding: 20px;
+                transition: box-shadow .6s ease;
+               
+}
+
+/* .tabPanel h3{
+    margin: 15px 0;
+} */
 
