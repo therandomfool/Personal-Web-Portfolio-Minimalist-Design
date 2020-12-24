@@ -1,6 +1,6 @@
 const boxArea = document.querySelector('.box-area');
 const boxArea2 = document.querySelector('.box-area2');
-
+const aboutArea = document.querySelector('.tabContainer');
 const contactArea = document.querySelector('.contactContainer');
 const me = document.querySelector('.me');
 
@@ -19,17 +19,17 @@ function home() {
     aboutArea.style.display = 'none';
 }
 
-$(function () {
-    $("#nav-contactarea").load("contact.html");
+// $(function () {
+//     $("#nav-contactarea").load("contact.html");
 
-})
+// })
 
 
-// placement of about & contact panel
+// placement of about panel
 
 $(function () {
     $("#nav-viewarea").load("about.html");
-
+    $("#nav-contactarea").load("contact.html");
 });
 
 //  function to switch about panel on/off
@@ -73,17 +73,21 @@ function contact() {
 
 function portfolio() {
 
-    const navArea = document.querySelector('.tabContainer');
+    const aboutArea = document.querySelector('.tabContainer');
+    const contactArea = document.querySelector('.contactContainer');
+    const me = document.querySelector('.me');
 
     if (boxArea.style.display == 'none') {
         boxArea.style.display = 'block';
         boxArea2.style.display = 'none';
-        navArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        aboutArea.style.display = 'none';
         me.style.display = 'block'
     } else {
         boxArea2.style.display = 'block';
         boxArea.style.display = 'none';
-        navArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        aboutArea.style.display = 'none';
         me.style.display = 'block'
     }
 
