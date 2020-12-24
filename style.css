@@ -15,10 +15,10 @@
     grid-template-rows: 1fr 2fr 1fr;
     gap: 35px;
     top: 10%;
-    
+
 }
 
-.me{
+.me {
     position: relative;
     display: block;
     grid-column: 4 / span 2;
@@ -28,13 +28,14 @@
     color: #090753;
 }
 
-.me h1{
+.me h1 {
     font-size: 1.9rem;
     font-weight: bold;
-    
-    
+
+
 }
-.me h3{
+
+.me h3 {
     font-size: 1.314rem;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -43,7 +44,8 @@
 
 .box-area {
     grid-column: 1;
-    grid-row: 1 / span 4;;
+    grid-row: 1 / span 4;
+    ;
     /* display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -72,17 +74,18 @@
     z-index: 92;
     width: min(10%, 5rem);
 }
+
 .box {
     list-style: none;
     float: left;
     padding-top: 1.3em;
     width: 80%;
-    
+
 }
 
 
-.box li{
-    
+.box li {
+
     font-weight: bolder;
     cursor: pointer;
     transition: color 0.2s ease-out, transform 0.2s ease-out;
@@ -90,7 +93,7 @@
     /* color: #040234; */
     display: inline-block;
     margin: 6px;
-    padding:  8px;
+    padding: 8px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
         -4px -4px 6px #fff;
@@ -99,13 +102,15 @@
 
 .box i {
     font-size: 1.5rem;
-   
+
 }
 
 .box li:hover {
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
         -4px -4px 6px #fff;
+
 }
+
 
 .box li:focus {
     outline: none;
@@ -113,16 +118,15 @@
         -4px -4px 10px #fff,
         4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
         -4px -4px 10px 0 #fff inset;
-}
-
-/* .box li:hover, */
-.box li:focus {
-   
+    
     color: rgb(65, 7, 224);
 }
 
+
+
 /* About Panel */
-.tabContainer {
+.tabContainer,
+.contactContainer {
     display: none;
     grid-column: 3;
     grid-row: 2 / span 3;
@@ -141,18 +145,18 @@
 }
 
 
-.tabPanel{
-    box-shadow:inset 7px 7px 15px rgba(55, 84, 170, .15),
-                inset -7px -7px 20px rgba(255, 255, 255, 1),
-                inset 0px 0px 4px rgba(255, 255, 255, 0),
-                0px 0px 4px rgba(255, 255, 255, .2);
-                border-radius: 10px;
-                padding: 20px;
-                transition: box-shadow .6s ease;
-               
+.tabPanel,
+.contactPanel {
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
+        inset -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0),
+        0px 0px 4px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow .6s ease;
+
 }
 
 /* .tabPanel h3{
     margin: 15px 0;
 } */
-
