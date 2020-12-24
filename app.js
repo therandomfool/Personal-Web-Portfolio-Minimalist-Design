@@ -1,3 +1,21 @@
+
+
+
+
+
+
+// placement of about panel
+// $(function () {
+//     const newLocal = "#nav-viewarea";
+//     $(newLocal).load("about.html");
+// });
+$(function () {
+    $("#nav-viewarea").load("about.html");
+});
+
+
+// function to switch home button and portfolio button layer
+
 function home() {
     // var x = document.getElementById("position");
     // if (x.style.display === "none") {
@@ -14,17 +32,6 @@ function home() {
     } else {
         boxArea2.style.display = 'block';
         boxArea.style.display = 'none';
-    }
-
-
-    // if (boxArea.style.display = 'block') {
-    //     boxArea.setAttribute('id', 'off')
-    //     boxArea2.setAttribute('id', 'on')
-
-    // } else {
-
-    //     boxArea2.setAttribute('id', 'off')
-    //     boxArea.setAttribute('id', 'on')
-    // }
+    } 
 
 }

@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cantarell', sans-serif;
 }
 
 .container {
@@ -29,6 +30,7 @@
 }
 .me h3{
     font-size: 1.314rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -51,7 +53,7 @@
 .box-area2 {
     font-weight: 700;
     grid-column: 1;
-    grid-row: 1 / span 4;;
+    grid-row: 1 / span 4;
     /* display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -113,13 +115,16 @@
 
 /* About Panel */
 .tabContainer {
+    grid-column: 3;
+    grid-row: 2 / span 3;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 600px;
     padding: 50px 48px;
-
+    z-index: 99;
+    background: #f8f8f8;
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
         -7px -7px 20px rgba(255, 255, 255, 1),
         0px 0px 4px rgba(255, 255, 255, .2);
