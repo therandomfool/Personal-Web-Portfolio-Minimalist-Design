@@ -1,35 +1,41 @@
-const boxArea = document.querySelector('.box-area');
-const boxArea2 = document.querySelector('.box-area2');
-const aboutArea = document.querySelector('.tabContainer');
-const contactArea = document.querySelector('.contactContainer');
+var boxArea = document.querySelector('.box-area');
+var boxArea2 = document.querySelector('.box-area2');
+var aboutArea = document.querySelector('.aboutContainer');
+var contactArea = document.querySelector('.contactContainer');
 
-const linkedinArea = document.querySelector('.linkedinContainer');
-const buttonContainer = document.querySelector('.buttonContainer');
-const tabPanels = document.querySelectorAll('.tabPanel');
+var linkedinArea = document.querySelector('.linkedinContainer');
+var githubArea = document.querySelector('.githubContainer');
+var buttonContainer = document.querySelector('.buttonContainer');
+var tabPanels = document.querySelectorAll('.tabPanel');
+var btns = document.querySelectorAll('button');
 
-const btns = document.querySelectorAll('button');
-const me = document.querySelector('.me');
+var me = document.querySelector('.me');
+
 
 // placement of panels
 
-$(function () {
-    $("#nav-viewarea").load("about.html");
-    $("#nav-contactarea").load("contact.html");
-    $("#nav-linkedinarea").load("linkedin.html");
-});
+// $(function () {
+//     $("#nav-viewarea").load("about.html");
+//     $("#nav-contactarea").load("contact.html");
+//     $("#nav-linkedinarea").load("linkedin.html");
+// });
 
 // home toggle
 
 function home() {
-
-    const aboutArea = document.querySelector('.tabContainer');
-    const contactArea = document.querySelector('.contactContainer');
+    
+    var linkedinArea = document.querySelector('.linkedinContainer');
+    var githubArea = document.querySelector('.githubContainer');
+    var aboutArea = document.querySelector('.aboutContainer');
+    var contactArea = document.querySelector('.contactContainer');
 
     boxArea.style.display = 'block';
     boxArea2.style.display = 'none';
     me.style.display = 'block';
     contactArea.style.display = 'none';
     aboutArea.style.display = 'none';
+    linkedinArea.style.display = 'none';
+    githubArea.style.display = 'none';
 }
 
 // tab button navigation
@@ -53,18 +59,24 @@ btns.forEach(btn => {
 
 //  function to switch about panel on/off
 function about() {
-    const aboutArea = document.querySelector('.tabContainer');
-    const contactArea = document.querySelector('.contactContainer');
-    const me = document.querySelector('.me');
+    // const contactArea = document.querySelector('.contactContainer');
+    // const aboutArea = document.querySelector('.aboutContainer');
+    // var linkedinArea = document.querySelector('.linkedinContainer');
+    // const me = document.querySelector('.me');
+    // var githubArea = document.querySelector('.githubContainer');
 
     if (aboutArea.style.display == 'block') {
-        contactArea.style.display = 'none';
         aboutArea.style.display = 'none';
-        me.style.display = 'block'
+        contactArea.style.display = 'none';
+        me.style.display = 'none'
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
     } else {
         aboutArea.style.display = 'block';
         me.style.display = 'none';
         contactArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
     }
 
 }
@@ -72,27 +84,77 @@ function about() {
 // function toggle contact panel
 
 function contact() {
-    const contactArea = document.querySelector('.contactContainer');
-    const aboutArea = document.querySelector('.tabContainer');
-    const me = document.querySelector('.me');
+    // const contactArea = document.querySelector('.contactContainer');
+    // const aboutArea = document.querySelector('.aboutContainer');
+    // const me = document.querySelector('.me');
+    // var githubArea = document.querySelector('.githubContainer');
 
     if (contactArea.style.display == 'block') {
         contactArea.style.display = 'none';
-        me.style.display = 'block'
         aboutArea.style.display = 'none';
+        me.style.display = 'none'
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
     } else {
         contactArea.style.display = 'block';
         me.style.display = 'none';
         aboutArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
     }
 
 }
 
+// function to switch linkedin panel
+function linkedin(){
+    const contactArea = document.querySelector('.contactContainer');
+    const aboutArea = document.querySelector('.aboutContainer');
+    const me = document.querySelector('.me');
+    const linkedinArea = document.querySelector('.linkedinContainer');
+
+    if (linkedinArea.style.display == 'block') {
+        linkedinArea.style.display = 'none';
+        me.style.display = 'block'
+        aboutArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        githubArea.style.display = 'none';
+    } else {
+        linkedinArea.style.display = 'block';
+        me.style.display = 'none';
+        aboutArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        githubArea.style.display = 'none';
+    }
+
+}
+
+// function to switch github panel
+function github(){
+    // const contactArea = document.querySelector('.contactContainer');
+    // const aboutArea = document.querySelector('.aboutContainer');
+    // const me = document.querySelector('.me');
+    // const linkedinArea = document.querySelector('.linkedinContainer');
+
+    if (githubArea.style.display == 'block') {
+        githubArea.style.display = 'none';
+        me.style.display = 'block'
+        aboutArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+    } else {
+        githubArea.style.display = 'block';
+        me.style.display = 'none';
+        aboutArea.style.display = 'none';
+        contactArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+    }
+
+}
 // function to switch home button and portfolio button layer
 
 function portfolio() {
 
-    const aboutArea = document.querySelector('.tabContainer');
+    const aboutArea = document.querySelector('.aboutContainer');
     const contactArea = document.querySelector('.contactContainer');
     const me = document.querySelector('.me');
 
@@ -101,12 +163,16 @@ function portfolio() {
         boxArea2.style.display = 'none';
         contactArea.style.display = 'none';
         aboutArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
         me.style.display = 'block'
     } else {
         boxArea2.style.display = 'block';
         boxArea.style.display = 'none';
         contactArea.style.display = 'none';
         aboutArea.style.display = 'none';
+        linkedinArea.style.display = 'none';
+        githubArea.style.display = 'none';
         me.style.display = 'block'
     }
 
