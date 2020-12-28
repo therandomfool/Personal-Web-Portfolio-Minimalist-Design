@@ -118,16 +118,17 @@
         -4px -4px 10px #fff,
         4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset,
         -4px -4px 10px 0 #fff inset;
-    
+
     color: rgb(65, 7, 224);
 }
 
 
 
 /* About, Contact Panel */
-.tabContainer,
-.contactContainer {
-    display: none;
+.tabContainer, 
+.contactContainer,
+.linkedinContainer {
+    /* display: none; */
     grid-column: 3;
     grid-row: 2 / span 3;
     position: absolute;
@@ -137,7 +138,7 @@
     max-width: 600px;
     padding: 50px 48px;
     z-index: 99;
-    background: #f8f8f8;
+    /* background: #ebecf0; */
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
         -7px -7px 20px rgba(255, 255, 255, 1),
         0px 0px 4px rgba(255, 255, 255, .2);
@@ -145,7 +146,7 @@
 }
 
 
-.tabPanel,
+/* .tabPanel, */
 .contactPanel {
     box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
         inset -7px -7px 20px rgba(255, 255, 255, 1),
@@ -157,6 +158,78 @@
 
 }
 
-/* .tabPanel h3{
-    margin: 15px 0;
-} */
+/* linkedin panel images */
+
+.linkedinContainer img{
+    width: 9rem;
+    height: 14rem;
+    margin: auto;
+}
+
+/*  buttons on linkedin and github panels */
+.buttonContainer {
+    display: flex;
+    border: 4px solid #ebecf0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+
+button {
+    padding: 10px;
+    color: #535d74;
+    background: #ebecf0;
+    transition: box-shadow .4s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+}
+
+button:first-child {
+    border-radius: 11px 0 0 11px;
+
+}
+
+button:last-child {
+    border-radius: 0 11px 11px 0;
+
+}
+
+button.active {
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
+        inset -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0);
+}
+
+.tabPanel {
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
+        inset -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0),
+        0px 0px 4px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow .6s ease;
+    display: none;
+}
+
+.tabPanel.active {
+    display: flex;
+    animation: anim 1.6s ease-in-out;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0.6%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.textContent {
+    color: #535d74;
+    padding: 1rem;
+
+}

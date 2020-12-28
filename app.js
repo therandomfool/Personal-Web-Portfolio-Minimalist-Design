@@ -2,8 +2,21 @@ const boxArea = document.querySelector('.box-area');
 const boxArea2 = document.querySelector('.box-area2');
 const aboutArea = document.querySelector('.tabContainer');
 const contactArea = document.querySelector('.contactContainer');
+
+const linkedinArea = document.querySelector('.linkedinContainer');
+const buttonContainer = document.querySelector('.buttonContainer');
+const tabPanels = document.querySelectorAll('.tabPanel');
+
+const btns = document.querySelectorAll('button');
 const me = document.querySelector('.me');
 
+// placement of panels
+
+$(function () {
+    $("#nav-viewarea").load("about.html");
+    $("#nav-contactarea").load("contact.html");
+    $("#nav-linkedinarea").load("linkedin.html");
+});
 
 // home toggle
 
@@ -11,7 +24,7 @@ function home() {
 
     const aboutArea = document.querySelector('.tabContainer');
     const contactArea = document.querySelector('.contactContainer');
-    
+
     boxArea.style.display = 'block';
     boxArea2.style.display = 'none';
     me.style.display = 'block';
@@ -19,18 +32,24 @@ function home() {
     aboutArea.style.display = 'none';
 }
 
-// $(function () {
-//     $("#nav-contactarea").load("contact.html");
+// tab button navigation
 
-// })
+btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        buttonContainer.querySelector('.active').classList.remove('active');
+        btn.classList.add('active');
 
+        tabPanels.forEach(tab => {
+            const dataAttr = btn.getAttribute('data-target');
 
-// placement of about panel
-
-$(function () {
-    $("#nav-viewarea").load("about.html");
-    $("#nav-contactarea").load("contact.html");
+            if (tab.id === dataAttr) {
+                linkedinArea.querySelector('.tabPanel.active').classList.remove('active')
+                tab.classList.add('active');
+            }
+        })
+    });
 });
+
 
 //  function to switch about panel on/off
 function about() {
