@@ -23,7 +23,8 @@ var me = document.querySelector('.me');
 // home toggle
 
 function home() {
-    
+    var boxArea = document.querySelector('.box-area');
+    var boxArea2 = document.querySelector('.box-area2');
     var linkedinArea = document.querySelector('.linkedinContainer');
     var githubArea = document.querySelector('.githubContainer');
     var aboutArea = document.querySelector('.aboutContainer');
@@ -106,11 +107,11 @@ function contact() {
 }
 
 // function to switch linkedin panel
-function linkedin(){
-    const contactArea = document.querySelector('.contactContainer');
-    const aboutArea = document.querySelector('.aboutContainer');
-    const me = document.querySelector('.me');
-    const linkedinArea = document.querySelector('.linkedinContainer');
+function linkedin() {
+    // const contactArea = document.querySelector('.contactContainer');
+    // const aboutArea = document.querySelector('.aboutContainer');
+    // const me = document.querySelector('.me');
+    // const linkedinArea = document.querySelector('.linkedinContainer');
 
     if (linkedinArea.style.display == 'block') {
         linkedinArea.style.display = 'none';
@@ -129,7 +130,7 @@ function linkedin(){
 }
 
 // function to switch github panel
-function github(){
+function github() {
     // const contactArea = document.querySelector('.contactContainer');
     // const aboutArea = document.querySelector('.aboutContainer');
     // const me = document.querySelector('.me');

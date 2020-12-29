@@ -1,71 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkedIn Panel</title>
-    <link rel="stylesheet" href="style.css">
-    
-    
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="linkedinContainer">
-        <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-        <div class="buttonContainer">
-          <button class='active' data-target="linked">Link</button>
-          <button data-target="js">JS Assesment</button>
-          <button data-target="css">CSS Assesment</button>
-          <button data-target="html">HTML Assesment</button>
+      <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
+      <div class="buttonContainer">
+        <button class="active" data-target="linked">Link</button>
+        <button data-target="js">JS Assesment</button>
+        <button data-target="css">CSS Assesment</button>
+        <button data-target="html">HTML Assesment</button>
+      </div>
+
+      <div class="tabPanel active" id="linked">
+        <img src="assets/kb5finger.gif" />
+        <div class="textContent">
+          <h3>Linked</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
+            nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
+          </p>
         </div>
-  
-        <div class="tabPanel active" id="linked">
-          <img src="assets/kb5finger.gif" />
-          <div class="textContent">
-            <h3>Linked</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
-              nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
-            </p>
-          </div>
+      </div>
+      <div class="tabPanel" id="js">
+        <img src="assets/js.png" />
+        <div class="textContent">
+          <h3>Javascript Assesment</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
+            nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
+          </p>
         </div>
-        <div class="tabPanel" id="js">
-          <img src="assets/js.png" />
-          <div class="textContent">
-            <h3>Javascript Assesment</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
-              nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
-            </p>
-          </div>
+      </div>
+      <div class="tabPanel" id="css">
+        <img src="assets/css.png" />
+        <div class="textContent">
+          <h3>CSS Assesment</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
+            nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
+          </p>
         </div>
-        <div class="tabPanel" id="css">
-          <img src="assets/css.png" />
-          <div class="textContent">
-            <h3>CSS Assesment</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
-              nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
-            </p>
-          </div>
+      </div>
+
+      <div class="tabPanel" id="html">
+        <img src="assets/html.png" />
+        <div class="textContent">
+          <h3>HTML Assesment</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
+            nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
+          </p>
         </div>
-      
-        <div class="tabPanel" id="html">
-          <img src="assets/html.png" />
-          <div class="textContent">
-            <h3>HTML Assesment</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              necessitatibus hic delectus facere quo, voluptates ipsa nostrum ad,
-              nulla, pariatur autem. Praesentium quisquam sunt obcaecati.
-            </p>
-          </div>
-        </div>
+      </div>
     </div>
-      <script src="app.js"></script>
-      
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>

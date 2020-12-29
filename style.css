@@ -32,8 +32,6 @@
 .me h1 {
     font-size: 1.9rem;
     font-weight: bold;
-
-
 }
 
 .me h3 {
@@ -41,20 +39,15 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-
 .box-area {
     grid-column: 1;
     grid-row: 1 / span 4;
     ;
-    /* display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: block; */
+   
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    font-weight: 700;
+   
     z-index: 92;
     width: min(10%, 5rem);
 }
@@ -63,15 +56,11 @@
     font-weight: 700;
     grid-column: 1;
     grid-row: 1 / span 4;
-    /* display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
-    display: -ms-flex;
-    display: flex; */
+    
     display: none;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+  
     z-index: 92;
     width: min(10%, 5rem);
 }
@@ -81,17 +70,15 @@
     float: left;
     padding-top: 1.3em;
     width: 80%;
-
 }
 
 
 .box li {
-
     font-weight: bolder;
     cursor: pointer;
     transition: color 0.2s ease-out, transform 0.2s ease-out;
     background: #f8f8f8;
-    /* color: #040234; */
+    color: #040234;
     display: inline-block;
     margin: 6px;
     padding: 8px;
@@ -113,6 +100,7 @@
 }
 
 
+
 .box li:focus {
     outline: none;
     box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1),
@@ -130,10 +118,9 @@
 .aboutContainer
  {
     display: none;
-    grid-column: 3;
-    grid-row: 2 / span 3;
+    
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     /* max-width: 600px; */
@@ -148,16 +135,16 @@
 }
 .githubContainer,
 .linkedinContainer{
+    
     display: none;
-    grid-column: 3;
-    grid-row: 2 / span 3;
+    
     position: fixed;
-    top: 40%;
+    /* top: 40%; */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     /* max-width: 600px; */
-    margin-top: 3%;
+    margin-top: 13rem;
     padding: 20px 38px;
     z-index: 99;
     background: #f2eded;
@@ -199,6 +186,8 @@
     font-size: .8rem;
     /* color: #2266c2; */
 }
+
+
 
 
 /* linkedin panel images */
