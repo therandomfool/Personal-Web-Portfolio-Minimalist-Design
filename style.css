@@ -90,7 +90,7 @@
 
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: .69s;
 
     /* -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
@@ -98,7 +98,7 @@
 }
 
 .box-area {
-    visibility: hidden;
+    /* visibility: hidden; */
     grid-column: 1;
     grid-row: 1 / span 4;
     /* transition: all 10s ease-in; */

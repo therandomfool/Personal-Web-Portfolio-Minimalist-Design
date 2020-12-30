@@ -14,9 +14,9 @@ var me = document.querySelector('.me');
 
 // initial button animation 
 // buttonview
-setTimeout(function(){
-    document.getElementById('buttonview').style.visibility = "visible";
-    },3000);
+// setTimeout(function(){
+//     document.getElementById('buttonview').style.visibility = "visible";
+//     },3000);
 
 // placement of panels
 
