@@ -327,10 +327,53 @@ button.active {
 }
 
 /* portfolio cards  */
-section {
+
+
+
+.wordpressSection{
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.p5jsSection{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cssSection{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.reactSection{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.javaSection{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.javascriptSection{
+    width: 100%;
+    height: 100%;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;

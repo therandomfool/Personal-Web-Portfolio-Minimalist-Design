@@ -1,15 +1,42 @@
+// buttons selection
 var boxArea = document.querySelector('.box-area');
 var boxArea2 = document.querySelector('.box-area2');
+
+// about panel selection
 var aboutArea = document.querySelector('.aboutContainer');
+
+// contact panel selection
 var contactArea = document.querySelector('.contactContainer');
 
+// linkedin panel selection
 var linkedinArea = document.querySelector('.linkedinContainer');
-var githubArea = document.querySelector('.githubContainer');
 var buttonContainer = document.querySelector('.buttonContainer');
 var tabPanels = document.querySelectorAll('.tabPanel');
 var btns = document.querySelectorAll('button');
 
+// github panel selection
+var githubArea = document.querySelector('.githubContainer');
 var me = document.querySelector('.me');
+
+// javascript selection
+var javascriptArea = document.querySelector('.javascriptSection');
+// java selection
+var javaArea = document.querySelector('.javaSection');
+
+// react selection
+var reactArea = document.querySelector('.reactSection');
+
+// p5.js selection
+var p5jsArea = document.querySelector('.p5jsSection');
+
+// css selection
+var cssArea = document.querySelector('.cssSection');
+
+// wordpress selection
+var wordpressArea = document.querySelector('.wordpressSection');
+
+
+
 
 
 // initial button animation 
@@ -29,12 +56,12 @@ var me = document.querySelector('.me');
 // home toggle
 
 function home() {
-    var boxArea = document.querySelector('.box-area');
-    var boxArea2 = document.querySelector('.box-area2');
-    var linkedinArea = document.querySelector('.linkedinContainer');
-    var githubArea = document.querySelector('.githubContainer');
-    var aboutArea = document.querySelector('.aboutContainer');
-    var contactArea = document.querySelector('.contactContainer');
+    // var boxArea = document.querySelector('.box-area');
+    // var boxArea2 = document.querySelector('.box-area2');
+    // var linkedinArea = document.querySelector('.linkedinContainer');
+    // var githubArea = document.querySelector('.githubContainer');
+    // var aboutArea = document.querySelector('.aboutContainer');
+    // var contactArea = document.querySelector('.contactContainer');
 
     boxArea.style.display = 'block';
     boxArea2.style.display = 'none';
@@ -155,7 +182,18 @@ function github() {
         contactArea.style.display = 'none';
         linkedinArea.style.display = 'none';
     }
+}
 
+// javascript panel function
+function javascript() {
+    
+    if (javascriptArea.style.display == 'flex') {
+        javascriptArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        javascriptArea.style.display = 'flex';
+        me.style.display = 'none';
+    }
 }
 // function to switch home button and portfolio button layer
 
@@ -184,4 +222,3 @@ function portfolio() {
     }
 
 }
-
