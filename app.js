@@ -70,6 +70,8 @@ function home() {
     aboutArea.style.display = 'none';
     linkedinArea.style.display = 'none';
     githubArea.style.display = 'none';
+    javascriptArea.style.display = 'none';
+    javaArea.style.display = 'none';
 }
 
 // tab button navigation
@@ -186,15 +188,37 @@ function github() {
 
 // javascript panel function
 function javascript() {
-    
+
     if (javascriptArea.style.display == 'flex') {
+        console.log("none");
         javascriptArea.style.display = 'none';
+        javaArea.style.display = 'none';
         me.style.display = 'none';
     } else {
         javascriptArea.style.display = 'flex';
+        console.log("flex");
+        javaArea.style.display = 'none';
         me.style.display = 'none';
     }
 }
+
+// java panel function
+function java() {
+    console.log(javaArea.style.display);
+    if (javaArea.style.display == 'flex') {
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        javaArea.style.display = 'flex';
+        javascriptArea.style.display = 'none';
+        me.style.display = 'none';
+    }
+}
+
+
+
+
 // function to switch home button and portfolio button layer
 
 function portfolio() {
