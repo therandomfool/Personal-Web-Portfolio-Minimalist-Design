@@ -72,6 +72,10 @@ function home() {
     githubArea.style.display = 'none';
     javascriptArea.style.display = 'none';
     javaArea.style.display = 'none';
+    cssArea.style.display = 'none';
+    reactArea.style.display = 'none';
+    p5jsArea.style.display = 'none';
+    wordpressArea.style.display = 'none';
 }
 
 // tab button navigation
@@ -190,35 +194,133 @@ function github() {
 function javascript() {
 
     if (javascriptArea.style.display == 'flex') {
-        console.log("none");
+
         javascriptArea.style.display = 'none';
         javaArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
         me.style.display = 'none';
     } else {
         javascriptArea.style.display = 'flex';
         console.log("flex");
         javaArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
         me.style.display = 'none';
     }
 }
 
 // java panel function
 function java() {
-    console.log(javaArea.style.display);
+
     if (javaArea.style.display == 'flex') {
         javaArea.style.display = 'none';
         javascriptArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
         me.style.display = 'none';
     } else {
         javaArea.style.display = 'flex';
         javascriptArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
         me.style.display = 'none';
     }
 }
 
+// css panel function
+function css() {
 
+    if (cssArea.style.display == 'flex') {
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        cssArea.style.display = 'flex';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    }
+}
 
+// react panel function
+function react() {
 
+    if (reactArea.style.display == 'flex') {
+        reactArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        reactArea.style.display = 'flex';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    }
+}
+
+// p5js panel function
+function p5js() {
+
+    if (p5jsArea.style.display == 'flex') {
+        p5jsArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        p5jsArea.style.display = 'flex';
+        reactArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        wordpressArea.style.display = 'none';
+        me.style.display = 'none';
+    }
+}
+
+// react panel function
+function wordpress() {
+
+    if (wordpressArea.style.display == 'flex') {
+        wordpressArea.style.display = 'none';
+        reactArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        me.style.display = 'none';
+    } else {
+        wordpressArea.style.display = 'flex';
+        reactArea.style.display = 'none';
+        cssArea.style.display = 'none';
+        javaArea.style.display = 'none';
+        javascriptArea.style.display = 'none';
+        me.style.display = 'none';
+    }
+}
 // function to switch home button and portfolio button layer
 
 function portfolio() {

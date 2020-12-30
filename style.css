@@ -4,6 +4,8 @@
     --clr-primary-200: #f2eded;
     --clr-primary-400: #2266c2;
     --clr-primary-600: #040236;
+    --clr-text-800: #010203;
+
 
     --ff-primary: 'Cantarell', sans-serif;
     --ff-secondary: 'Ubuntu', sans-serif;
@@ -335,6 +337,7 @@ section{
 }
 
 .wordpressSection{
+    margin-left: 2em;
     width: 100%;
     height: 100%;
     display: none;
@@ -343,6 +346,7 @@ section{
     flex-wrap: wrap;
 }
 .p5jsSection{
+    margin-left: 2em;
     width: 100%;
     height: 100%;
     display: none;
@@ -351,6 +355,7 @@ section{
     flex-wrap: wrap;
 }
 .cssSection{
+    margin-left: 2em;
     width: 100%;
     height: 100%;
     display: none;
@@ -359,6 +364,7 @@ section{
     flex-wrap: wrap;
 }
 .reactSection{
+    margin-left: 2em;
     width: 100%;
     height: 100%;
     display: none;
@@ -399,7 +405,7 @@ section{
 }
 
 .card {
-
+    font-family: var(--ff-primary);
     display: flex;
     flex-direction: column;
     background: var(--clr-primary-200);
@@ -413,14 +419,6 @@ section{
         1px 1px 4px rgba(255, 255, 255, .2);
 }
 
-.lang {
-    text-align: center;
-
-}
-
-.lang i {
-    color: var(--clr-primary-400);
-}
 
 .imagebox {
     cursor: pointer;
@@ -458,19 +456,32 @@ section{
     font-size: 1.19em;
 }
 
+.card .git .bottom{
+    padding-top: .1rem;
+}
+
 .card p{
     /* top: -5%; */
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     font-size: .53em;
     text-align: center;
     font-weight: bolder;
     color: var(--clr-primary-600);
 }
 
+
+
+
+
+
+.lang {
+    text-align: center;
+}
+
 .lang p{
     line-height: 83%;
     font-family: var(--ff-secondary);
-    color: var(--clr-primary-400);
+    color: var(--clr-text-800);
     font-weight: bolder;
 }
 
