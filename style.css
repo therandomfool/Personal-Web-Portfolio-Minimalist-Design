@@ -458,6 +458,27 @@ section{
     font-size: 1.19em;
 }
 
+.card p{
+    /* top: -5%; */
+    font-family: var(--ff-primary);
+    font-size: .53em;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--clr-primary-600);
+}
+
+.lang p{
+    line-height: 83%;
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary-400);
+    font-weight: bolder;
+}
+
+.lang i{
+    color:var(--clr-primary-600);
+    font-size: .89em;
+}
+
 .git:hover {
     text-align: center;
     transform: scale(1.2);
