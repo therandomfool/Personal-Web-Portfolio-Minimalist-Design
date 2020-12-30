@@ -48,9 +48,60 @@
     font-family: var(--ff-secondary)
 }
 
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+
+    /* -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s; */
+}
+
 .box-area {
+    visibility: hidden;
     grid-column: 1;
     grid-row: 1 / span 4;
+    /* transition: all 10s ease-in; */
 
 
     justify-content: center;
@@ -341,13 +392,13 @@ section {
     height: auto;
 }
 
-.imagebox img:hover{
+.imagebox img:hover {
     transform: scale(1.1);
     transition: all 1s ease-out;
 }
 
 .card .git {
-    font-family:var(--ff-primary);
+    font-family: var(--ff-primary);
     color: #242a2f;
     font-size: .6em;
     cursor: pointer;
@@ -355,7 +406,7 @@ section {
 
 }
 
-.git:hover{
+.git:hover {
     text-align: center;
     transform: scale(1.2);
     transition: all 1s ease-in;
