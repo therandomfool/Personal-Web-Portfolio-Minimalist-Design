@@ -135,7 +135,7 @@
     width: 80%;
     padding: 50px 48px;
     z-index: 99;
-    background: #f2eded;
+    background: var(--clr-primary-200);
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
         -7px -7px 20px rgba(255, 255, 255, 1),
         0px 0px 4px rgba(255, 255, 255, .2);
@@ -283,35 +283,51 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: #92dfec;
 }
 
 .main-title h2 {
-    font-size: 1.2rem;
-    padding: .75rem 0;
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-600);
+    font-size: .85em;
+    padding: .5rem 0;
 }
 
 .main-title p {
-    font-weight: 400;
-    font-size: .85rem
+    font-family: var(--ff-secondary);
+    color: var(--clr-primary-400);
+    font-size: .65em
 }
 
 .card {
+
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-primary-200);
     margin: 30px;
     width: min-content;
-    height: 30rem;
-    padding: 40px;
+    height: 25rem;
+    padding: 20px;
     border-radius: 30px;
     box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
         -7px -7px 20px #fff,
         1px 1px 4px rgba(255, 255, 255, .2);
 }
 
+.lang {
+    text-align: center;
+
+}
+
+.lang i {
+    color: var(--clr-primary-400);
+}
+
 .imagebox {
-    width: 246px;
-    height: 196px;
+    cursor: pointer;
+    width: 226px;
+    height: 166px;
     border-radius: 10px;
-    border: 1px ridged #f3f4f7;
+    border: 1px ridged var(--clr-primary-200);
     overflow: hidden;
     box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
         -7px -7px 20px #fff,
@@ -321,4 +337,28 @@ section {
 
 .imagebox img {
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagebox img:hover{
+    transform: scale(1.1);
+    transition: all 1s ease-out;
+}
+
+.card .git {
+    font-family:var(--ff-primary);
+    color: #242a2f;
+    font-size: .6em;
+    cursor: pointer;
+    margin-top: auto;
+
+}
+
+.git:hover{
+    text-align: center;
+    transform: scale(1.2);
+    transition: all 1s ease-in;
+    color: var(--clr-primary-400);
+    font-size: .75em;
 }
