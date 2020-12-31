@@ -185,7 +185,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* max-width: 600px; */
-    width: 80%;
+    width: 40%;
     padding: 50px 48px;
     z-index: 99;
     background: var(--clr-primary-200);
@@ -204,9 +204,9 @@
     /* top: 40%; */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 50%;
     /* max-width: 600px; */
-    margin-top: 13rem;
+    margin-top: 15rem;
     padding: 20px 38px;
     z-index: 99;
     background: #f2eded;
@@ -217,6 +217,25 @@
 }
 
 
+/* arrange 2 columns for display in github panel */
+.column {
+    margin: auto;
+    width: 50%;
+}
+
+.gitCont {
+    cursor: pointer;
+    margin-left: 2.25rem;
+}
+
+.gitOver img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+
+}
+
 .aboutPanel,
 .contactPanel {
     box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
@@ -226,7 +245,7 @@
     border-radius: 10px;
     padding: 20px;
     transition: box-shadow .6s ease;
-
+    
 }
 
 
@@ -234,8 +253,9 @@
 .githubContainer h3 {
     font-size: 1.3rem;
     color: #242a2f;
-
 }
+
+
 
 .linkedinContainer h3 {
     font-size: 1.3rem;
@@ -244,7 +264,7 @@
 
 .githubContainer p,
 .linkedinContainer p {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--ff-secondary);
     font-size: .8rem;
     /* color: #2266c2; */
 }
@@ -254,14 +274,16 @@
 
 /* linkedin panel images */
 
-.githubContainer img,
+
 .linkedinContainer img {
-    width: 35%;
-    height: 200px;
-    margin: auto;
+    
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
-/*  buttons on linkedin and github panels */
+/*  buttons on linkedin panels */
 .buttonContainer {
     display: flex;
     /* border: 4px solid #ebecf0; */
@@ -303,7 +325,7 @@ button.active {
         inset 0px 0px 4px rgba(255, 255, 255, 0),
         0px 0px 4px rgba(255, 255, 255, .2);
     border-radius: 10px;
-    padding: 20px;
+    padding: 13px;
     transition: box-shadow .6s ease;
     display: none;
 }
@@ -330,13 +352,13 @@ button.active {
 
 /* portfolio cards  */
 
-section{
+section {
     padding-left: 2em;
     padding-top: 1.69em;
-    
+
 }
 
-.wordpressSection{
+.wordpressSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -345,7 +367,8 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.p5jsSection{
+
+.p5jsSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -354,7 +377,8 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.cssSection{
+
+.cssSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -363,7 +387,8 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.reactSection{
+
+.reactSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -372,7 +397,8 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.javaSection{
+
+.javaSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -381,7 +407,8 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.javascriptSection{
+
+.javascriptSection {
     margin-left: 2em;
     width: 100%;
     height: 100%;
@@ -452,15 +479,15 @@ section{
     margin-top: auto;
 }
 
-.card .git i{
+.card .git i {
     font-size: 1.19em;
 }
 
-.card .git .bottom{
+.card .git .bottom {
     padding-top: .1rem;
 }
 
-.card p{
+.card p {
     /* top: -5%; */
     font-family: var(--ff-secondary);
     font-size: .53em;
@@ -478,15 +505,15 @@ section{
     text-align: center;
 }
 
-.lang p{
+.lang p {
     line-height: 83%;
     font-family: var(--ff-secondary);
     color: var(--clr-text-800);
     font-weight: bolder;
 }
 
-.lang i{
-    color:var(--clr-primary-600);
+.lang i {
+    color: var(--clr-primary-600);
     font-size: .89em;
 }
 

@@ -204,7 +204,6 @@ function javascript() {
         me.style.display = 'none';
     } else {
         javascriptArea.style.display = 'flex';
-        console.log("flex");
         javaArea.style.display = 'none';
         cssArea.style.display = 'none';
         reactArea.style.display = 'none';
@@ -311,6 +310,7 @@ function wordpress() {
         cssArea.style.display = 'none';
         javaArea.style.display = 'none';
         javascriptArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
         me.style.display = 'none';
     } else {
         wordpressArea.style.display = 'flex';
@@ -318,6 +318,7 @@ function wordpress() {
         cssArea.style.display = 'none';
         javaArea.style.display = 'none';
         javascriptArea.style.display = 'none';
+        p5jsArea.style.display = 'none';
         me.style.display = 'none';
     }
 }
