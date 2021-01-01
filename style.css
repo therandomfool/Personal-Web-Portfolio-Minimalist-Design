@@ -197,19 +197,19 @@
     border-radius: 30px;
 }
 
-.githubContainer,
+
 .linkedinContainer {
 
     display: none;
-    /* margin: auto; */
+
     position: fixed;
     /* top: 40%; */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    min-width: 15rem;
-    max-width: 50rem;
-    max-height: 23rem;
+    width: 70%;
+    max-width: 500px;
+    min-width: 300px;
+    /* min-height: 50%; */
     margin-top: 15rem;
     padding: 15px 38px;
     z-index: 99;
@@ -220,25 +220,56 @@
     border-radius: 30px;
 }
 
+.githubContainer {
+    display: none;
+    /* margin: auto; */
+    position: fixed;
+    /* top: 40%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 620px;
+    min-width: 300px;
+    /* min-height: 45%; */
+    margin-top: 15rem;
+    padding: 15px 38px;
+    z-index: 99;
+    background: #f2eded;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
+        -7px -7px 20px rgba(255, 255, 255, 1),
+        0px 0px 4px rgba(255, 255, 255, .2);
+    border-radius: 30px;
+}
 
-/* arrange 2 columns for display in github & linkedin panel */
+.linkedinContainer a {
+    text-decoration: none;
+}
+
+
+
+
+/* arrange 2 columns for display in github panel */
 .column {
     margin: auto;
     width: 50%;
 }
 
+
 .gitCont {
+    text-align: center;
     cursor: pointer;
-    margin-left: 2.25rem;
+
 }
 
-.gitCont a{
+.gitCont a {
     text-decoration: none;
 
 }
 
 .gitOver img {
+    margin: auto auto;
     object-fit: cover;
+    width: 90%;
     max-width: 100%;
     max-height: 100%;
     display: block;
@@ -254,7 +285,7 @@
     border-radius: 10px;
     padding: 20px;
     transition: box-shadow .6s ease;
-    
+
 }
 
 
@@ -285,10 +316,9 @@
 
 
 .linkedinContainer img {
-    
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
+    /* object-fit: cover; */
+    width: 400px;
+    height: 300px;
     display: block;
 }
 
@@ -328,7 +358,10 @@ button.active {
         inset 0px 0px 4px rgba(255, 255, 255, 0);
 }
 
-.tabPanel {
+
+
+.gitTabPanel {
+    /* margin: auto auto; */
     box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
         inset -7px -7px 20px rgba(255, 255, 255, 1),
         inset 0px 0px 4px rgba(255, 255, 255, 0),
@@ -336,10 +369,31 @@ button.active {
     border-radius: 10px;
     padding: 13px;
     transition: box-shadow .6s ease;
+
+
+    display: none;
+}
+
+.tabPanel {
+
+    box-shadow: inset 7px 7px 15px rgba(55, 84, 170, .15),
+        inset -7px -7px 20px rgba(255, 255, 255, 1),
+        inset 0px 0px 4px rgba(255, 255, 255, 0),
+        0px 0px 4px rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 13px;
+    transition: box-shadow .6s ease;
+
+
     display: none;
 }
 
 .tabPanel.active {
+    display: flex;
+    animation: anim 1.6s ease-in-out;
+}
+
+.gitTabPanel.active {
     display: flex;
     animation: anim 1.6s ease-in-out;
 }
