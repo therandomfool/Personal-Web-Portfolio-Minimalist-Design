@@ -37,14 +37,6 @@ var wordpressArea = document.querySelector('.wordpressSection');
 
 
 
-
-
-// initial button animation 
-// buttonview
-// setTimeout(function(){
-//     document.getElementById('buttonview').style.visibility = "visible";
-//     },3000);
-
 // placement of panels
 
 // $(function () {
@@ -56,12 +48,7 @@ var wordpressArea = document.querySelector('.wordpressSection');
 // home toggle
 
 function home() {
-    // var boxArea = document.querySelector('.box-area');
-    // var boxArea2 = document.querySelector('.box-area2');
-    // var linkedinArea = document.querySelector('.linkedinContainer');
-    // var githubArea = document.querySelector('.githubContainer');
-    // var aboutArea = document.querySelector('.aboutContainer');
-    // var contactArea = document.querySelector('.contactContainer');
+  
 
     boxArea.style.display = 'block';
     boxArea2.style.display = 'none';
