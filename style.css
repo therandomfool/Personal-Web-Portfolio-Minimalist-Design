@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--ff-primary)
+    font-family: var(--ff-primary);
 }
 
 .container {
@@ -175,16 +175,18 @@
 
 
 
+
+
 /* About, Contact Panel */
 .contactContainer,
 .aboutContainer {
     display: none;
-
-    position: absolute;
+    position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* max-width: 600px; */
+    min-width: 15rem;
+    max-width: 50rem;
     width: 40%;
     padding: 50px 48px;
     z-index: 99;
@@ -199,15 +201,17 @@
 .linkedinContainer {
 
     display: none;
-    margin: auto;
+    /* margin: auto; */
     position: fixed;
     /* top: 40%; */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-    /* max-width: 600px; */
+    min-width: 15rem;
+    max-width: 50rem;
+    max-height: 23rem;
     margin-top: 15rem;
-    padding: 20px 38px;
+    padding: 15px 38px;
     z-index: 99;
     background: #f2eded;
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15),
@@ -217,7 +221,7 @@
 }
 
 
-/* arrange 2 columns for display in github panel */
+/* arrange 2 columns for display in github & linkedin panel */
 .column {
     margin: auto;
     width: 50%;
@@ -226,6 +230,11 @@
 .gitCont {
     cursor: pointer;
     margin-left: 2.25rem;
+}
+
+.gitCont a{
+    text-decoration: none;
+
 }
 
 .gitOver img {

@@ -105,14 +105,14 @@ function about() {
     // const me = document.querySelector('.me');
     // var githubArea = document.querySelector('.githubContainer');
 
-    if (aboutArea.style.display == 'block') {
+    if (aboutArea.style.display == 'grid') {
         aboutArea.style.display = 'none';
         contactArea.style.display = 'none';
         me.style.display = 'none'
         linkedinArea.style.display = 'none';
         githubArea.style.display = 'none';
     } else {
-        aboutArea.style.display = 'block';
+        aboutArea.style.display = 'grid';
         me.style.display = 'none';
         contactArea.style.display = 'none';
         linkedinArea.style.display = 'none';
