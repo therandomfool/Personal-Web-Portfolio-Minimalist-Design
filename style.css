@@ -505,16 +505,23 @@ section {
 }
 
 .main-title h2 {
+    text-align: center;
     font-family: var(--ff-primary);
     color: var(--clr-primary-600);
-    font-size: .85em;
+    font-size: 1.1em;
     padding: .5rem 0;
 }
 
-.main-title p {
+.main-title h2 a{
+    text-decoration: none;
+}
+
+.main-title ul li {
     font-family: var(--ff-secondary);
-    color: var(--clr-primary-400);
-    font-size: .65em
+    color: var(--clr-text-800);
+    font-size: .65em;
+    line-height: 1rem;
+    margin-left: -25%;
 }
 
 .card {
@@ -599,8 +606,10 @@ section {
 }
 
 .lang i {
-    color: var(--clr-primary-600);
+    color: var(--clr-primary-400);
     font-size: .89em;
+    letter-spacing: 10px;
+    padding-bottom: 5%;
 }
 
 .git:hover {
@@ -611,4 +620,9 @@ section {
     font-family: var(--ff-secondary);
     font-weight: bolder;
     font-size: .79em;
+}
+
+.git a{
+    text-decoration: none;
+
 }
