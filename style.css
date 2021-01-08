@@ -131,8 +131,9 @@
 .box {
     list-style: none;
     float: left;
-    padding-top: 1em;
+    padding-top: 4rem;
     width: 80%;
+    
 }
 
 
@@ -144,7 +145,7 @@
     color: var(--clr-primary-600);
     display: inline-block;
     margin: 6px;
-    padding: 8px;
+    padding: 13px;
     border: 2px solid rgba(255, 255, 255, 0.3);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.1),
         -4px -4px 6px #fff;
@@ -152,7 +153,7 @@
 }
 
 .box i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 }
 
@@ -445,7 +446,7 @@ section {
 }
 
 .wordpressSection {
-    margin-left: 2em;
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -455,7 +456,7 @@ section {
 }
 
 .p5jsSection {
-    margin-left: 2em;
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -465,7 +466,7 @@ section {
 }
 
 .cssSection {
-    margin-left: 2em;
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -475,7 +476,7 @@ section {
 }
 
 .reactSection {
-    margin-left: 2em;
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -485,7 +486,7 @@ section {
 }
 
 .javaSection {
-    margin-left: 2em;
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -495,7 +496,8 @@ section {
 }
 
 .javascriptSection {
-    margin-left: 2em;
+    
+    margin-left: 3em;
     width: 100%;
     height: 100%;
     display: none;
@@ -508,17 +510,18 @@ section {
     margin: auto;
     width: 226px;
     height: 176px;
+    
 }
 
 
 .main-title h2 {
     text-align: center;
-    letter-spacing: .19rem;
+    /* letter-spacing: .19rem; */
     font-family: var(--ff-primary);
     color: var(--clr-primary-600);
-    font-size: 1.1em;
+    font-size: 1rem;
     padding: .5rem 0;
-    margin-top: -.5rem;
+    margin-top: -2.5rem;
 }
 
 .main-title h2 a {
@@ -528,9 +531,17 @@ section {
 .main-title ul li {
     font-family: var(--ff-secondary);
     color: var(--clr-text-800);
-    font-size: .65em;
+    font-size: .79em;
     line-height: 1rem;
-    margin-left: -20%;
+    
+}
+
+.main-title ul{
+    margin-top: -.3rem;
+    margin-bottom: 10%;
+    margin-left: .15rem;
+    
+
 }
 
 .card {
@@ -538,11 +549,12 @@ section {
     display: flex;
     flex-direction: column;
     background: var(--clr-primary-200);
-    margin: 30px;
+    margin: 3rem;
     width: 15rem;
     /* width: min-content; */
-    height: 23rem;
+    height: 27rem;
     padding: 20px;
+    margin-top: 5rem;
     border-radius: 30px;
     box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
         -7px -7px 20px #fff,
@@ -571,8 +583,8 @@ section {
     border-radius: 10px;
     width: 100%;
     height: 100%;
-    max-height: 100%;
-    max-width: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
 
 }
 
@@ -581,7 +593,7 @@ section {
     transition: all 1s ease-out;
 }
 
-.card .git {
+.git {
     text-align: center;
     font-family: var(--ff-primary);
     color: var(--clr-text-800);
@@ -600,6 +612,7 @@ section {
 } */
 
 .card p {
+    
     font-family: var(--ff-secondary);
     font-size: .53em;
     text-align: center;
@@ -630,10 +643,11 @@ section {
 }
 
 .lang p {
-    line-height: 83%;
+    /* line-height: 83%; */
     font-family: var(--ff-secondary);
     color: var(--clr-text-800);
     font-weight: bolder;
+    font-size: .79em;
 }
 
 .lang i {
@@ -641,4 +655,87 @@ section {
     font-size: .89em;
     letter-spacing: 10px;
     padding-bottom: 5%;
+}
+
+
+
+/* mini card css p5.js */
+
+.card-mini {
+    font-family: var(--ff-primary);
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-primary-200);
+    margin: 30px;
+    width: 15rem;
+    /* width: min-content; */
+    height: 17rem;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
+        -7px -7px 20px #fff,
+        1px 1px 4px rgba(255, 255, 255, .2);
+}
+
+.card-mini .git {
+    text-align: center;
+    font-family: var(--ff-primary);
+    color: var(--clr-text-800);
+    font-weight: bolder;
+    font-size: .69em;
+    cursor: pointer;
+    margin-bottom: -.79rem;
+}
+
+.card-mini .git i {
+    font-size: 1.19em;
+}
+
+
+.main-title-mini {
+    margin: auto;
+    width: 226px;
+    height: 176px;
+    
+}
+
+
+.main-title-mini h2 {
+    text-align: center;
+    font-family: var(--ff-primary);
+    color: var(--clr-primary-600);
+    font-size: 1rem;
+    padding: .5rem 0;
+    /* margin-top: -2.5rem; */
+}
+
+.imagebox-mini {
+    margin-top: -.4rem;
+    cursor: pointer;
+    margin: auto auto;
+    width: 226px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px ridged var(--clr-primary-200);
+    
+    box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
+        -7px -7px 20px #fff,
+        1px 1px 4px rgba(255, 255, 255, .2);
+}
+
+
+.imagebox-mini img {
+
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
+
+}
+
+.imagebox-mini img:hover {
+    transform: scale(1.1);
+    transition: all 1s ease-out;
 }
