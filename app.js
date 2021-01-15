@@ -35,20 +35,28 @@ var cssArea = document.querySelector('.cssSection');
 // wordpress selection
 var wordpressArea = document.querySelector('.wordpressSection');
 
+// function a() {
+//     let script = document.createElement('script');
+//     script.type = 'text/javascript';
+//     script.src = 'sketch.js';
 
+//     document.getElementsByTagName('head')[0].appendChild(script);
+// }
+// function b() {
+//     let script = document.createElement('script');
+//     script.type = 'text/javascript';
+//     script.src = 'sketch2.js';
+
+//     document.getElementsByTagName('head')[0].appendChild(script);
+// }
 
 // placement of panels
 
-// $(function () {
-//     $("#nav-viewarea").load("about.html");
-//     $("#nav-contactarea").load("contact.html");
-//     $("#nav-linkedinarea").load("linkedin.html");
-// });
 
 // home toggle
 
 function home() {
-  
+
 
     boxArea.style.display = 'block';
     boxArea2.style.display = 'none';
