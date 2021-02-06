@@ -757,6 +757,22 @@ section {
 
 }
 
+.imagebox:hover {
+    transform: scale(2.3);
+    transform-origin: center center;
+    z-index: 100;
+    border-radius: 5%;
+    transition: 1s ease-in-out;
+}
+
+.imagebox-mini img:hover {
+    transform: scale(2.3);
+    transform-origin: center center;
+    
+    border-radius: 5%;
+    transition: 1s ease-in-out;
+}
+
 /* .card-mini .lang  {
     color: var(--clr-primary-400);
     font-size: .9em;
