@@ -1,5 +1,3 @@
-
-
 let particles = [];
 let cnt = 0;
 
@@ -16,13 +14,13 @@ function setup() {
 
 function draw() {
     background('rgba(248,248,255, 0.6)');
-    
+
     particles.forEach((particle, idx) => {
         particle.update();
         particle.draw();
         particle.checkParticles(particles.slice(idx));
     });
-    
+
 }
 
 function windowResized() {
@@ -42,7 +40,7 @@ class Particle {
 
     draw() {
         noStroke();
-        fill('rgba(25, 25, 2, 0.045)');
+        fill('rgba(25, 25, 255, 0.245)');
         circle(this.pos.x, this.pos.y, this.size * 2);
     }
 
@@ -62,7 +60,7 @@ class Particle {
             const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
             if (d < 120) {
                 const alpha = map(d, 0, 120, 0, 0.25)
-                stroke(`rgba(163, 250, 250, ${alpha})`);
+                stroke(`rgba(3, 250, 255, ${alpha})`);
                 line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y)
             }
         });
