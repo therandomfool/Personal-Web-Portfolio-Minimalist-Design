@@ -32,7 +32,7 @@ body{
     display: grid;
     grid-template-columns: .60fr .20fr 2fr 2fr;
     /* grid-template-rows: 1fr 2fr 1fr; */
-    gap: 35px;
+    /* gap: 35px; */
     top: 2rem;
 
 }
@@ -240,7 +240,7 @@ body{
     max-width: 620px;
     min-width: 300px;
     /* min-height: 45%; */
-    margin-top: 18rem;
+    margin-top: 16rem;
     padding: 15px 38px;
     z-index: 99;
     background: #f2eded;
@@ -261,6 +261,7 @@ body{
 .column {
     margin: auto;
     width: 50%;
+    
 }
 
 
@@ -277,12 +278,8 @@ body{
 
 .gitOver img {
     margin: auto auto;
-    /* object-fit: cover; */
-    /* width: 90%; */
     max-width: 100%;
     max-height: 100%;
-    /* display: flex; */
-
 }
 
 .aboutPanel,
@@ -491,7 +488,7 @@ section {
 .javascriptSection,
 .javaSection,
 .reactSection {
-    margin-top: 2.25rem;
+    /* margin-top: 1.69rem; */
     margin-left: 3em;
     width: 100%;
     height: 100%;
@@ -548,7 +545,7 @@ section {
     font-family: var(--ff-secondary);
     color: var(--clr-text-800);
     font-size: .79em;
-    line-height: 1rem;
+    line-height: 1.169rem;
     
 }
 
@@ -565,7 +562,7 @@ section {
     display: flex;
     flex-direction: column;
     background: var(--clr-primary-200);
-    margin: 1rem;
+    margin: .75rem;
     width: 15rem;
     /* width: min-content; */
     height: 27rem;
