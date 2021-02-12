@@ -21,7 +21,7 @@
 
 }
 
-body{
+body {
     max-width: 100%;
     /* overflow-x: hidden;
     overflow-y: hidden; */
@@ -29,11 +29,13 @@ body{
 
 .container {
     position: fixed;
+    overflow: hidden;
     display: grid;
-    grid-template-columns: .60fr .20fr 2fr 2fr;
+    grid-template-columns: repeat(auto-fit, 20rem);
     /* grid-template-rows: 1fr 2fr 1fr; */
     /* gap: 35px; */
     top: 2rem;
+    height: 100%;
 
 }
 
@@ -139,7 +141,7 @@ body{
     float: left;
     padding-top: 1rem;
     width: 80%;
-    
+
 }
 
 
@@ -261,7 +263,7 @@ body{
 .column {
     margin: auto;
     width: 50%;
-    
+
 }
 
 
@@ -523,7 +525,7 @@ section {
     margin: auto;
     width: 226px;
     height: 176px;
-    
+
 }
 
 
@@ -546,14 +548,14 @@ section {
     color: var(--clr-text-800);
     font-size: .79em;
     line-height: 1.169rem;
-    
+
 }
 
-.main-title ul{
+.main-title ul {
     margin-top: -.3rem;
     margin-bottom: 10%;
     margin-left: .15rem;
-    
+
 
 }
 
@@ -576,7 +578,7 @@ section {
 
 
 .imagebox {
-    
+
     cursor: pointer;
     margin: auto auto;
     width: 226px;
@@ -598,7 +600,7 @@ section {
     height: 100%;
     max-height: 100%;
     max-width: 100%;
-    
+
 }
 
 /* .imagebox img:hover {
@@ -626,7 +628,7 @@ section {
 } */
 
 .card p {
-    
+
     font-family: var(--ff-secondary);
     font-size: .53em;
     text-align: center;
@@ -655,11 +657,11 @@ section {
 .lang {
     text-align: center;
     margin-top: -.9rem;
-   
+
 }
 
 .lang p {
-   
+
     font-family: var(--ff-secondary);
     color: var(--clr-text-800);
     font-weight: bolder;
@@ -669,9 +671,9 @@ section {
 .lang i {
     color: var(--clr-primary-400);
     font-size: 1.3em;
-   
+
     padding: 5px;
-    
+
 
 }
 
@@ -686,7 +688,7 @@ section {
     background: var(--clr-primary-200);
     margin: 13px;
     width: 15rem;
-    
+
     height: 13rem;
     padding: 20px;
     border-radius: 30px;
@@ -714,7 +716,7 @@ section {
     margin: auto;
     width: 226px;
     height: 176px;
-    
+
 }
 
 
@@ -734,10 +736,10 @@ section {
     height: 130px;
     border-radius: 10px;
     border: 1px ridged var(--clr-primary-200);
-    
+
     box-shadow: 7px 7px 10px rgba(55, 84, 170, .15),
-    -7px -7px 20px #fff,
-    1px 1px 4px rgba(255, 255, 255, .2);
+        -7px -7px 20px #fff,
+        1px 1px 4px rgba(255, 255, 255, .2);
     /* margin-top: -.69rem; */
 }
 
@@ -765,31 +767,65 @@ section {
 .imagebox-mini img:hover {
     transform: scale(1.3);
     transform-origin: center center;
-    
+
     border-radius: 5%;
     transition: 1s ease-in-out;
 }
 
-/* .card-mini .lang  {
-    color: var(--clr-primary-400);
-    font-size: .9em;
-    /* letter-spacing: 5px; */
-    /* padding-top: -55%; */
-    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, 10rem);
+        top: .03rem;
+        height: 100%;
+    }
 
-} 
+    .me {
+        grid-column: 4;
+        top: -1%;
+        margin-left: -69px;
+        text-align: right;
+        color: #090753;
+    }
 
-/* .card-mini .lang i {
-    color: var(--clr-primary-400);
-    font-size: 1.3rem;
-    /* letter-spacing: 5px; */
-    /* padding-bottom: 22.3rem; */
-    
+    .me h1 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
-} 
+    .me h3 {
+        font-size: .79rem;
+        font-family: var(--ff-secondary)
+    }
 
-/* .imagebox-mini img:hover {
-    
-    transform: scale(2);
-    transition: all 1s ease-out;
-} */
+
+    .box {
+        width: 30%;
+    }
+
+    .box li {
+        margin: 13px;
+        padding: 3px;
+    }
+
+    .box i {
+        font-size: 1.3rem;
+    }
+
+    .contactContainer,
+    .aboutContainer {
+        top: 35%;
+        left: 60%;
+        min-width: 13rem;
+        max-width: 15rem;
+        padding: 15px 15px;
+        z-index: 99;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
