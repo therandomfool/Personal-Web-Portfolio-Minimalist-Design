@@ -826,6 +826,7 @@ section {
 
     .contactPanel  {
         word-wrap: break-word;
+        font-size: 1em;
     }
 
     /* linkedin responsive */
