@@ -785,7 +785,7 @@ section {
         margin-left: -59px;
         text-align: right;
         color: #090753;
-        
+
     }
 
     .me h1 {
@@ -821,13 +821,16 @@ section {
         max-width: 15rem;
         padding: 15px 15px;
         z-index: 99;
+
+    }
+
+    .contactPanel  {
         word-wrap: break-word;
     }
 
     /* linkedin responsive */
 
-    .linkedinContainer
-    {
+    .linkedinContainer {
         min-width: 70vw;
         min-height: 50vh;
         left: 52%;
