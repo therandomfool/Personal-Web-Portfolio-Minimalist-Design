@@ -785,6 +785,7 @@ section {
         margin-left: -59px;
         text-align: right;
         color: #090753;
+        word-wrap: break-word;
     }
 
     .me h1 {
