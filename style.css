@@ -785,12 +785,13 @@ section {
         margin-left: -59px;
         text-align: right;
         color: #090753;
-        word-wrap: break-word;
+        
     }
 
     .me h1 {
         font-size: 1rem;
         font-weight: bold;
+        word-wrap: break-word;
     }
 
     .me h3 {
@@ -820,6 +821,7 @@ section {
         max-width: 15rem;
         padding: 15px 15px;
         z-index: 99;
+        word-wrap: break-word;
     }
 
     /* linkedin responsive */
